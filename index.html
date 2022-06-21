@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tut1</title>
-    <script src="./js/index.js" defer></script>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
 
-  <body>
-    <main class="main">
-      <div class="container">
-        <form class="formi">
-         
-          <div class="place-area">
-            <label>Emp Code</label>
-            <input type="text" name="empCode" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tut1</title>
+  <script src="./js/index.js" defer></script>
+  <link rel="stylesheet" href="https://use.typekit.net/opg3wle.css">
+  <link rel="stylesheet" type="text/css" href="https://demo.plantpot.works/assets/css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <main class="main flex">
+    <div class="container">
+      <form class="formi flex">
+
+        <div class="two-columns">
+          <div class="set">
+          <label class="">Emp Code<span class="req"> *</span></label>
+          <input type="text" name="empCode" class="" placeholder="Employee Code" />
+          </div>
+          <div class="set">
+          <label class="">Full Name<span class="req"> *</span></label>
+          <input type="text" name="fullName" class="" placeholder="Full Name" />
           </div>
 
-          <div class="place-area">
-            <label>Full Name</label>
-            <input type="text" name="fullName" />
+          <div class="set">
+            <label class="formi label">Salary</label>
+            <input type="text" name="salary" class="" placeholder="Salary" />
           </div>
-          
-          <div class="place-area">
-            <label>Salary</label>
-            <input type="text" name="salary" />
+          <div class="set">
+            <label class="formi label">City</label>
+            <input type="text" name="city" class="" placeholder="City" />
           </div>
-          <div>
-            <label >City</label>
-            <input type="text" name="city" class="place-area"/>
-          </div>
-          <div class="form-action-buttons">
-            <input type="submit" value="submit" />
-          </div>
-        </form>
-        <div class="list">
-
         </div>
+
+        
+
+
+        <button>SUBMIT</button>
+
+      </form>
+      <div class="list">
+
       </div>
-    </main>
-  </body>
+    </div>
+  </main>
+</body>
+
 </html>

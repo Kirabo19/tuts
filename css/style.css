@@ -1,38 +1,111 @@
-*{
-    /* background-color: rgb(165, 163, 165) */
+/* @import url("https://p.typekit.net/p.css?s=1&k=opg3wle&ht=tk&f=10879.10880.10881.10882.10883.10884.10885.10886.10887.10888.15586.15587&a=26826350&app=typekit&e=css"); */
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+  
+   /* font-size: 16px;
+   background-color: #000046; */
+}
+
+html {
     font-size: 16px;
-    padding: auto;
-   margin: 10px;
+  }
+  body {
+    background-color: #000046;
+    font-family: futura-pt, sans-serif;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+
+
+.flex {
+    display: flex;
 }
 
-.contianer {
+main {
+    /* display: flex; */
+    justify-content: center;
+    /* margin-top: 50px; */
+    align-items: center;
+    position: relative;
     width: 100%;
-    height: 100vh;
-    flex-direction: column; 
-    display: flex;
-    
+    height: auto;
+    min-height: 600px;
+    padding: 20px;
 }
-
-/* .flex {
-    display: flex;
-} */
 
 .formi {
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
-   justify-content: center;
-   width: 50%;
-   gap: 20px;
-   max-height: 300px;
-   
-}
-
-.place-area :first-child{
-    width: 50%;
-}
-
-.form-action-buttons {
+  /* display: flex; */
+   flex-direction: column;
    width: 100%;
 
+}
+
+.formi label {
+    display: inline-block;
+    margin: .5rem 0;
+    color: #3d3935;
+    letter-spacing: 2px;
+    font-size: 1rem;
+}
+
+.formi input {
+  width: 100%;
+  padding: 15px 10px;
+  border: 1px solid #3d3935;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #3d3935;
+  outline: 0;
+}
+
+.formi input::placeholder {
+    color: #867d6c;
+    font-size: 1 rem;
+}
+
+.formi button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #3d3935;
+  color: #fff;
+  font-size: 1.125rem;
+  letter-spacing: 2px;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.req {
+    color: #b0092d;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 30px 15px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+.set {
+    margin: .4rem 0;
+    padding: 0;
+    border: none;
+}
+
+@media screen and (min-width: 481px) {
+  .two-columns {
+    grid-template-columns: 48.7804878% 48.7804878%;
+    grid-column-gap: 2.43902439%;
+  }
 }
